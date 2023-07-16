@@ -34,7 +34,6 @@ async def call_openai(sys_prompt: str, user_prompt: str, api_type: str):
     
     elif api_type == ApiType.open_ai.value:
         openai.api_key = os.environ['OPENAI_API_KEY']
-        openai.organization = os.environ["OPENAI_ORG"] 
         response = openai.ChatCompletion.create(
             model=os.environ["OPENAI_MODEL"],
             messages=messages,
