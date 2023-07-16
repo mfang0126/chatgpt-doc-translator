@@ -19,6 +19,7 @@ python-dotenv = "^1.0.0"
 python-multipart = "^0.0.6"
 langchain = "^0.0.123"
 tiktoken = "^0.3.2"
+lxml = "^4.9.3"
 
 [tool.poetry.scripts]
 start = "server.main:start"
