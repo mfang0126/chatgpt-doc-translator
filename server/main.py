@@ -59,7 +59,7 @@ async def translate_file(
 ):
     try:
         document = await get_document_from_file(file)
-    except Exception:
+    except Exception as e:
         raise e
    
     splitter = text_splitter()
